@@ -83,7 +83,9 @@ class Pig(object):
         Returns a new Pig whose weight is the weight of the heavier
           of this Pig and the other_Pig.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
+
+        return Pig(self.weight + other_pig.get_weight())
 
 
 # -----------------------------------------------------------------------------
