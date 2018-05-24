@@ -42,7 +42,8 @@ class Pig(object):
 
     def get_weight(self):
         """ Returns this Pig's weight. """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
+        return self.weight
 
     def eat(self, pounds_of_slop):
         """
