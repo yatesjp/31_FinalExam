@@ -49,7 +49,8 @@ class Pig(object):
         """
         Increments this Pig's weight by the given pounds_of_slop.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
+        self.weight += pounds_of_slop
 
     def eat_for_a_year(self):
         """
