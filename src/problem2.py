@@ -8,6 +8,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 
 import time
 import testing_helper
+import math
 
 
 def main():
@@ -20,7 +21,7 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
     run_test_problem2a()
-    # run_test_problem2b()
+    run_test_problem2b()
     # run_test_problem2c()
 
 
@@ -258,9 +259,17 @@ def problem2b(sequence):
       :type sequence  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    greatest = 0
+
+    for k in range(1, len(sequence)):
+        if math.fabs(sequence[k]) > math.fabs(sequence[greatest]):
+            greatest = k
+
+    return greatest
 
 
 def run_test_problem2c():
