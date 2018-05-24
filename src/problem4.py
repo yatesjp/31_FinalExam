@@ -71,7 +71,12 @@ class Pig(object):
         Returns either this Pig object or the other given Pig object,
         whichever is heavier.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
+
+        if self.weight < other_pig.get_weight():
+            return other_pig
+        else:
+            return self
 
     def new_pig(self, other_pig):
         """
